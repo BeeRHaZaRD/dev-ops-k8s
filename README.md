@@ -17,4 +17,7 @@
     2. Добавил Readiness и Liveness HTTP пробы с path='/'
 8. Применил manifest: `kubectl apply -f deployment.yaml --namespace default`
 9. Обеспечил доступ к web-приложению внутри кластера: `kubectl port-forward --address 0.0.0.0 deployment/web 8080:8000`
-10. Проверил корректность работы web-приложения
+10. Проверил корректность работы web-приложения:
+
+![webapp-response1](/report-img/webapp-response1.png "Доступ к web-приложению из браузера")
+![webapp-response2](/report-img/webapp-response2.png "Доступ к web-приложению из консоли")
